@@ -9,11 +9,12 @@
 
 <br/>
 
-<img src="game.gif" alt="Interactive Banner" width="950"/>
+<img src="game.gif" alt="Interactive Banner" width="900"/>
 
 <br/>
 <br/>
-### 🛠️ My Tech Stack
+
+🛠️ My Tech Stack
 
 #### 💻 Programming & Web
 <p align="left">
@@ -40,4 +41,10 @@
   <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white" />
+</p>
+
+📫 Let's Connect!
+<p align="left">
+<a href="https://linkedin.com/in/Amitabh-Phule" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="mailto:amitabhphule@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 </p>
