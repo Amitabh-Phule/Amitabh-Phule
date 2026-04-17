@@ -22,111 +22,106 @@
 
 ---
 
-## 🧠 Tech Stack
+## 🛠️ Tech Stack
 
-### 🐍 Languages
+### 💻 Languages
 
-![Python](https://img.shields.io/badge/Python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-
----
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=python" width="55" height="55" alt="Python" title="Python"/>
+  <img src="https://skillicons.dev/icons?i=cpp" width="55" height="55" alt="C++" title="C++"/>
+  <img src="https://skillicons.dev/icons?i=java" width="55" height="55" alt="Java" title="Java"/>
+  <img src="https://skillicons.dev/icons?i=js" width="55" height="55" alt="JavaScript" title="JavaScript"/>
+  <img src="https://skillicons.dev/icons?i=html" width="55" height="55" alt="HTML5" title="HTML5"/>
+  <img src="https://skillicons.dev/icons?i=css" width="55" height="55" alt="CSS3" title="CSS3"/>
+</p>
 
 ### 🤖 AI / ML
 
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=OpenCV&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=Jupyter&logoColor=white)
-![scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
-![RAG](https://img.shields.io/badge/RAG-Retrieval--Augmented%20Generation-6A0DAD?style=for-the-badge&logo=openai&logoColor=white)
-
----
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=tensorflow" width="55" height="55" alt="TensorFlow" title="TensorFlow"/>
+  <img src="https://skillicons.dev/icons?i=opencv" width="55" height="55" alt="OpenCV" title="OpenCV"/>
+  <img src="https://skillicons.dev/icons?i=sklearn" width="55" height="55" alt="Scikit-Learn" title="Scikit-Learn"/>
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=Jupyter&logoColor=white" height="40" alt="Jupyter" title="Jupyter"/>
+  <img src="https://img.shields.io/badge/RAG-Retrieval--Augmented%20Generation-6A0DAD?style=for-the-badge&logo=openai&logoColor=white" height="40" alt="RAG"/>
+</p>
 
 ### 🌐 Web & DevOps Tools
 
-![VS Code](https://img.shields.io/badge/VS%20Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-
----
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=vscode" width="55" height="55" alt="VS Code" title="VS Code"/>
+  <img src="https://skillicons.dev/icons?i=git" width="55" height="55" alt="Git" title="Git"/>
+  <img src="https://skillicons.dev/icons?i=github" width="55" height="55" alt="GitHub" title="GitHub"/>
+  <img src="https://skillicons.dev/icons?i=docker" width="55" height="55" alt="Docker" title="Docker"/>
+  <img src="https://skillicons.dev/icons?i=kubernetes" width="55" height="55" alt="Kubernetes" title="Kubernetes"/>
+</p>
 
 ### 🎨 Design
 
-![Canva](https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=Canva&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=figma" width="55" height="55" alt="Figma" title="Figma"/>
+  <img src="https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=Canva&logoColor=white" height="40" alt="Canva"/>
+</p>
 
 > *Aesthetic interest in tribal geometric design systems — structured symmetry meets cultural depth.*
 
----
-
 ### ⚙️ Core Concepts
 
-![SaaS Architecture](https://img.shields.io/badge/SaaS%20Architecture-0A66C2?style=for-the-badge&logo=amazonaws&logoColor=white)
-![CI/CD Pipelines](https://img.shields.io/badge/CI%2FCD%20Pipelines-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![System Design](https://img.shields.io/badge/System%20Design-6DB33F?style=for-the-badge&logo=apachekafka&logoColor=white)
+<p align="left">
+  <img src="https://img.shields.io/badge/SaaS%20Architecture-0A66C2?style=for-the-badge&logo=amazonaws&logoColor=white" height="40"/>
+  <img src="https://img.shields.io/badge/CI%2FCD%20Pipelines-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" height="40"/>
+  <img src="https://img.shields.io/badge/System%20Design-6DB33F?style=for-the-badge&logo=apachekafka&logoColor=white" height="40"/>
+</p>
 
 ---
 
 ## 📊 GitHub Dashboard
 
-<!-- ╔══════════════════ BOX 1 — HEADER ROW ══════════════════╗ -->
-
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<!-- ═══════════════════ BOX 1 — HEADER: Profile Info + Activity Graph ═══════════════════ -->
+<table width="100%" cellspacing="0" cellpadding="14" border="0">
   <tr>
-    <td width="32%" valign="top">
+    <td width="30%" valign="top">
 
-**👤 Amitabh-Phule**
+**Amitabh-Phule (Amitabh)**
 
-| | |
-|---|---|
-| 🏷️ Name | Amitabh Phule |
-| 🔥 2026 Contributions | **662** |
-| 📦 Public Repos | **11** |
-| 🗓️ Joined | 1 year ago |
-| 🆔 Handle | @Amitabh-Phule |
+🔵 662 Contributions in 2026
+
+📋 11 Public Repos
+
+🕐 Joined GitHub 1 year ago
+
+🎴 @Amitabh-Phule
 
 </td>
-    <td width="68%" valign="top" align="right">
+    <td width="70%" valign="top" align="right">
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Amitabh-Phule&theme=react-dark&hide_border=true&area=true&custom_title=Contribution+Activity)](https://github.com/Amitabh-Phule)
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Amitabh-Phule&theme=react-dark&hide_border=true&area=true&custom_title=Contributions+in+the+last+year&color=58a6ff&line=58a6ff&point=58a6ff)](https://github.com/Amitabh-Phule)
 
 </td>
   </tr>
 </table>
 
----
-
-<!-- ╔══════════════════ MIDDLE ROW ══════════════════╗ -->
-
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<!-- ═══════════════════ MIDDLE ROW: Stats + Hourly Commits ═══════════════════ -->
+<table width="100%" cellspacing="0" cellpadding="12" border="0">
   <tr>
     <td width="50%" valign="top" align="center">
 
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Amitabh-Phule&show_icons=true&theme=react-dark&hide_border=true&include_all_commits=true&count_private=true)](https://github.com/Amitabh-Phule)
+[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Amitabh-Phule&show_icons=true&theme=react-dark&hide_border=true&include_all_commits=true&count_private=true&title_color=58a6ff&icon_color=58a6ff&rank_icon=github)](https://github.com/Amitabh-Phule)
 
 </td>
     <td width="50%" valign="top" align="center">
 
-[![Hourly Commits](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Amitabh-Phule&theme=react_dark)](https://github.com/Amitabh-Phule)
+[![Commits UTC](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Amitabh-Phule&theme=react_dark&utcOffset=5.5)](https://github.com/Amitabh-Phule)
 
 </td>
   </tr>
 </table>
 
----
-
-<!-- ╔══════════════════ BOTTOM ROW ══════════════════╗ -->
-
-<table width="100%" cellspacing="0" cellpadding="0" border="0">
+<!-- ═══════════════════ BOTTOM ROW: Top Languages by Repo + by Commit ═══════════════════ -->
+<table width="100%" cellspacing="0" cellpadding="12" border="0">
   <tr>
     <td width="50%" valign="top" align="center">
 
-[![Top Languages by Repo](https://github-readme-stats.vercel.app/api/top-langs/?username=Amitabh-Phule&theme=react-dark&hide_border=true&layout=compact&langs_count=8)](https://github.com/Amitabh-Phule)
+[![Top Languages by Repo](https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Amitabh-Phule&theme=react_dark)](https://github.com/Amitabh-Phule)
 
 </td>
     <td width="50%" valign="top" align="center">
