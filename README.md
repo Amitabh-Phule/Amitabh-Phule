@@ -1,242 +1,4 @@
-import os
-import requests
-import json
-from datetime import datetime, timezone
-from collections import defaultdict
-
-USERNAME = os.environ.get("GITHUB_USERNAME", "Amitabh-Phule")
-TOKEN = os.environ.get("GITHUB_TOKEN", "")
-
-HEADERS = {
-    "Authorization": f"Bearer {TOKEN}",
-    "Content-Type": "application/json",
-    "Accept": "application/vnd.github+json",
-}
-
-# ── GraphQL query: contributions, repos, lang breakdown, PRs, issues, stars ──
-GRAPHQL_QUERY = """
-query($login: String!) {
-  user(login: $login) {
-    name
-    createdAt
-    followers { totalCount }
-    following { totalCount }
-    repositories(first: 100, ownerAffiliations: OWNER, isFork: false, privacy: PUBLIC) {
-      totalCount
-      nodes {
-        name
-        stargazerCount
-        languages(first: 10, orderBy: {field: SIZE, direction: DESC}) {
-          edges {
-            size
-            node { name color }
-          }
-        }
-      }
-    }
-    contributionsCollection {
-      totalCommitContributions
-      totalPullRequestContributions
-      totalIssueContributions
-      totalRepositoriesWithContributedCommits
-      contributionCalendar {
-        totalContributions
-        weeks {
-          contributionDays {
-            contributionCount
-            date
-          }
-        }
-      }
-      commitContributionsByRepository(maxRepositories: 25) {
-        repository { nameWithOwner }
-        contributions {
-          totalCount
-        }
-      }
-    }
-    pullRequests(states: MERGED) { totalCount }
-    issues { totalCount }
-  }
-}
-"""
-
-def run_graphql(query, variables):
-    resp = requests.post(
-        "https://api.github.com/graphql",
-        headers=HEADERS,
-        json={"query": query, "variables": variables},
-        timeout=30,
-    )
-    resp.raise_for_status()
-    data = resp.json()
-    if "errors" in data:
-        raise RuntimeError(f"GraphQL errors: {data['errors']}")
-    return data["data"]
-
-def fetch_commit_hours():
-    """Fetch recent commit timestamps via REST to build hourly chart."""
-    repos_resp = requests.get(
-        f"https://api.github.com/users/{USERNAME}/repos?per_page=30&sort=pushed",
-        headers=HEADERS, timeout=20
-    )
-    repos = repos_resp.json() if repos_resp.ok else []
-    hour_counts = defaultdict(int)
-    for repo in repos[:10]:
-        commits_resp = requests.get(
-            f"https://api.github.com/repos/{USERNAME}/{repo['name']}/commits?per_page=50&author={USERNAME}",
-            headers=HEADERS, timeout=20
-        )
-        if not commits_resp.ok:
-            continue
-        for commit in commits_resp.json():
-            try:
-                date_str = commit["commit"]["author"]["date"]
-                dt = datetime.fromisoformat(date_str.replace("Z", "+00:00"))
-                ist_hour = (dt.hour + 5) % 24
-                hour_counts[ist_hour] += 1
-            except Exception:
-                pass
-    return hour_counts
-
-def build_contrib_chart_data(weeks):
-    """Last 12 months contribution totals grouped by month."""
-    monthly = defaultdict(int)
-    for week in weeks:
-        for day in week["contributionDays"]:
-            try:
-                dt = datetime.fromisoformat(day["date"])
-                key = dt.strftime("%b %Y")
-                monthly[key] += day["contributionCount"]
-            except Exception:
-                pass
-    sorted_months = sorted(monthly.keys(), key=lambda k: datetime.strptime(k, "%b %Y"))
-    last12 = sorted_months[-12:]
-    return last12, [monthly[m] for m in last12]
-
-def top_languages_by_repo(repos):
-    lang_count = defaultdict(int)
-    for repo in repos:
-        for edge in repo["languages"]["edges"]:
-            lang_count[edge["node"]["name"]] += 1
-    total = sum(lang_count.values()) or 1
-    sorted_langs = sorted(lang_count.items(), key=lambda x: -x[1])[:6]
-    return [(name, round(count * 100 / total)) for name, count in sorted_langs]
-
-def top_languages_by_commit(commit_by_repo):
-    """Approximate lang by commit using repo primary language heuristic."""
-    lang_commits = defaultdict(int)
-    for entry in commit_by_repo:
-        repo_name = entry["repository"]["nameWithOwner"].split("/")[1]
-        count = entry["contributions"]["totalCount"]
-        resp = requests.get(
-            f"https://api.github.com/repos/{USERNAME}/{repo_name}/languages",
-            headers=HEADERS, timeout=10
-        )
-        if resp.ok:
-            langs = resp.json()
-            total_bytes = sum(langs.values()) or 1
-            for lang, size in langs.items():
-                lang_commits[lang] += count * size / total_bytes
-    total = sum(lang_commits.values()) or 1
-    sorted_langs = sorted(lang_commits.items(), key=lambda x: -x[1])[:6]
-    return [(name, round(val * 100 / total)) for name, val in sorted_langs]
-
-LANG_COLORS = {
-    "Python": "#3572A5", "JavaScript": "#f1e05a", "Java": "#b07219",
-    "TypeScript": "#2b7489", "C++": "#f34b7d", "C": "#555555",
-    "HTML": "#e34c26", "CSS": "#563d7c", "Shell": "#89e051",
-    "Jupyter Notebook": "#DA5B0B", "Go": "#00ADD8", "Rust": "#dea584",
-    "Ruby": "#701516", "Kotlin": "#A97BFF", "Swift": "#F05138",
-    "Dart": "#00B4AB", "PHP": "#4F5D95", "C#": "#178600",
-}
-
-LANG_ICONS = {
-    "Python": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-    "JavaScript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-    "Java": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-    "TypeScript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-    "C++": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-    "HTML": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-    "CSS": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-    "Go": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
-    "Rust": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg",
-    "Kotlin": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
-    "C#": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
-    "Dart": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg",
-    "PHP": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
-    "Swift": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg",
-    "Ruby": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg",
-    "Shell": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
-    "C": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
-}
-
-def lang_icon_img(name, size=16):
-    url = LANG_ICONS.get(name)
-    if url:
-        return f'<img src="{url}" width="{size}" height="{size}" style="border-radius:3px;vertical-align:middle;"/>'
-    color = LANG_COLORS.get(name, "#888")
-    return f'<span style="display:inline-block;width:{size}px;height:{size}px;background:{color};border-radius:3px;"></span>'
-
-def joined_ago(created_at_str):
-    created = datetime.fromisoformat(created_at_str.replace("Z", "+00:00"))
-    now = datetime.now(timezone.utc)
-    diff = now - created
-    years = diff.days // 365
-    months = (diff.days % 365) // 30
-    if years >= 1:
-        return f"{years} year{'s' if years > 1 else ''} ago"
-    return f"{months} month{'s' if months > 1 else ''} ago"
-
-def generate_readme(data, hour_counts):
-    user = data["user"]
-    cc = user["contributionsCollection"]
-    repos = user["repositories"]["nodes"]
-    total_stars = sum(r["stargazerCount"] for r in repos)
-    total_contribs = cc["contributionCalendar"]["totalContributions"]
-    total_commits = cc["totalCommitContributions"]
-    total_prs = user["pullRequests"]["totalCount"]
-    total_issues = user["issues"]["totalCount"]
-    total_repos = user["repositories"]["totalCount"]
-    contributed_to = cc["totalRepositoriesWithContributedCommits"]
-    joined = joined_ago(user["createdAt"])
-    updated = datetime.now(timezone.utc).strftime("%d %b %Y, %H:%M UTC")
-
-    weeks = cc["contributionCalendar"]["weeks"]
-    month_labels, month_data = build_contrib_chart_data(weeks)
-
-    repo_langs = top_languages_by_repo(repos)
-    commit_langs = top_languages_by_commit(cc["commitContributionsByRepository"])
-
-    hours_labels = list(range(24))
-    hours_data = [hour_counts.get(h, 0) for h in hours_labels]
-
-    def lang_rows(langs):
-        rows = ""
-        for name, pct in langs:
-            icon = lang_icon_img(name)
-            color = LANG_COLORS.get(name, "#888")
-            rows += f"""
-    <tr>
-      <td style="padding:4px 8px;">{icon}&nbsp;<span style="color:#c9d1d9;font-size:12px;">{name}</span></td>
-      <td style="padding:4px 8px;">
-        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
-          <div style="background:{color};height:100%;width:{pct}%;border-radius:4px;"></div>
-        </div>
-      </td>
-      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">{pct}%</td>
-    </tr>"""
-        return rows
-
-    repo_lang_colors = json.dumps([LANG_COLORS.get(n, "#888") for n, _ in repo_langs])
-    repo_lang_data = json.dumps([p for _, p in repo_langs])
-    repo_lang_labels = json.dumps([n for n, _ in repo_langs])
-
-    commit_lang_colors = json.dumps([LANG_COLORS.get(n, "#888") for n, _ in commit_langs])
-    commit_lang_data = json.dumps([p for _, p in commit_langs])
-    commit_lang_labels = json.dumps([n for n, _ in commit_langs])
-
-    readme = f"""<div align="center">
+<div align="center">
 
 ![Banner](WhatsApp%20Image%202026-04-17%20at%2010.39.43%20PM%20(1).jpeg)
 
@@ -314,7 +76,7 @@ def generate_readme(data, hour_counts):
 
 ## 📊 GitHub Dashboard
 
-> 🔄 **Auto-updated daily** via GitHub Actions &nbsp;|&nbsp; Last updated: `{updated}`
+> 🔄 **Auto-updated daily** via GitHub Actions &nbsp;|&nbsp; Last updated: `17 Apr 2026, 19:31 UTC`
 
 <!--DASHBOARD_START-->
 <table width="100%" border="0" cellspacing="0" cellpadding="0">
@@ -323,10 +85,10 @@ def generate_readme(data, hour_counts):
 
 <b>Amitabh-Phule (Amitabh)</b><br/><br/>
 
-🔵 &nbsp;<b>{total_contribs}</b> Contributions in {datetime.now().year}<br/><br/>
-📋 &nbsp;<b>{total_repos}</b> Public Repos<br/><br/>
-🕐 &nbsp;Joined GitHub <b>{joined}</b><br/><br/>
-⭐ &nbsp;<b>{total_stars}</b> Total Stars<br/><br/>
+🔵 &nbsp;<b>673</b> Contributions in 2026<br/><br/>
+📋 &nbsp;<b>10</b> Public Repos<br/><br/>
+🕐 &nbsp;Joined GitHub <b>1 year ago</b><br/><br/>
+⭐ &nbsp;<b>2</b> Total Stars<br/><br/>
 🎴 &nbsp;@Amitabh-Phule
 
 </td>
@@ -344,11 +106,11 @@ def generate_readme(data, hour_counts):
 
 | Metric | Count |
 |--------|-------|
-| ⭐ Total Stars | **{total_stars}** |
-| 💻 Total Commits | **{total_commits}** |
-| 🔀 Total PRs | **{total_prs}** |
-| 🐛 Total Issues | **{total_issues}** |
-| 📦 Contributed to | **{contributed_to} repos** |
+| ⭐ Total Stars | **2** |
+| 💻 Total Commits | **254** |
+| 🔀 Total PRs | **0** |
+| 🐛 Total Issues | **0** |
+| 📦 Contributed to | **9 repos** |
 
 </td>
 <td width="50%" valign="top" style="padding:8px;">
@@ -366,7 +128,61 @@ def generate_readme(data, hour_counts):
 **Top Languages by Repo**
 
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
-{lang_rows(repo_langs)}
+
+    <tr>
+      <td style="padding:4px 8px;"><span style="display:inline-block;width:16px;height:16px;background:#DA5B0B;border-radius:3px;"></span>&nbsp;<span style="color:#c9d1d9;font-size:12px;">Jupyter Notebook</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#DA5B0B;height:100%;width:30%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">30%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="16" height="16" style="border-radius:3px;vertical-align:middle;"/>&nbsp;<span style="color:#c9d1d9;font-size:12px;">Python</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#3572A5;height:100%;width:15%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">15%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="16" height="16" style="border-radius:3px;vertical-align:middle;"/>&nbsp;<span style="color:#c9d1d9;font-size:12px;">C++</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#f34b7d;height:100%;width:10%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">10%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><span style="display:inline-block;width:16px;height:16px;background:#888;border-radius:3px;"></span>&nbsp;<span style="color:#c9d1d9;font-size:12px;">Cython</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#888;height:100%;width:5%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">5%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="16" height="16" style="border-radius:3px;vertical-align:middle;"/>&nbsp;<span style="color:#c9d1d9;font-size:12px;">C</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#555555;height:100%;width:5%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">5%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><span style="display:inline-block;width:16px;height:16px;background:#888;border-radius:3px;"></span>&nbsp;<span style="color:#c9d1d9;font-size:12px;">Fortran</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#888;height:100%;width:5%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">5%</td>
+    </tr>
 </table>
 
 </td>
@@ -375,7 +191,61 @@ def generate_readme(data, hour_counts):
 **Top Languages by Commit**
 
 <table border="0" cellspacing="0" cellpadding="0" width="100%">
-{lang_rows(commit_langs)}
+
+    <tr>
+      <td style="padding:4px 8px;"><span style="display:inline-block;width:16px;height:16px;background:#DA5B0B;border-radius:3px;"></span>&nbsp;<span style="color:#c9d1d9;font-size:12px;">Jupyter Notebook</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#DA5B0B;height:100%;width:73%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">73%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="16" height="16" style="border-radius:3px;vertical-align:middle;"/>&nbsp;<span style="color:#c9d1d9;font-size:12px;">Python</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#3572A5;height:100%;width:26%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">26%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="16" height="16" style="border-radius:3px;vertical-align:middle;"/>&nbsp;<span style="color:#c9d1d9;font-size:12px;">C++</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#f34b7d;height:100%;width:1%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">1%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="16" height="16" style="border-radius:3px;vertical-align:middle;"/>&nbsp;<span style="color:#c9d1d9;font-size:12px;">C#</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#178600;height:100%;width:0%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">0%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><span style="display:inline-block;width:16px;height:16px;background:#888;border-radius:3px;"></span>&nbsp;<span style="color:#c9d1d9;font-size:12px;">Cython</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#888;height:100%;width:0%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">0%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="16" height="16" style="border-radius:3px;vertical-align:middle;"/>&nbsp;<span style="color:#c9d1d9;font-size:12px;">C</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#555555;height:100%;width:0%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">0%</td>
+    </tr>
 </table>
 
 </td>
@@ -392,19 +262,3 @@ def generate_readme(data, hour_counts):
 ![Profile Views](https://komarev.com/ghpvc/?username=Amitabh-Phule&color=6A0DAD&style=for-the-badge&label=PROFILE+VIEWS)
 
 </div>
-"""
-    return readme
-
-def main():
-    print(f"Fetching data for {USERNAME}...")
-    data = run_graphql(GRAPHQL_QUERY, {"login": USERNAME})
-    print(f"Fetching commit hour data...")
-    hour_counts = fetch_commit_hours()
-    print(f"Generating README...")
-    readme = generate_readme(data, hour_counts)
-    with open("README.md", "w", encoding="utf-8") as f:
-        f.write(readme)
-    print("README.md written successfully.")
-
-if __name__ == "__main__":
-    main()
