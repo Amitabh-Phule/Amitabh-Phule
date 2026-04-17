@@ -1,12 +1,11 @@
 <div align="center">
 
-<img src="WhatsApp%20Image%202026-04-17%20at%2010.39.43%20PM%20(1).jpeg" width="100%" alt="Amitabh Phule Banner" />
+<img src="WhatsApp%20Image%202026-04-17%20at%2010.39.43%20PM%20(1).jpeg" width="100%" />
 
 <br/>
 
 # 👋 Hi, I'm Amitabh Phule  
 **B.Tech Student | AI Enthusiast | Creative Developer**
-*"Transforming logic into interactive experiences and AI solutions."*
 
 <br/>
 
@@ -14,16 +13,16 @@
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Amitabh-Phule&theme=react-dark&area=true&hide_border=true" width="100%" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Amitabh-Phule&theme=react-dark&area=true&hide_border=true&custom_title=Amitabh-Phule%20(Amitabh)" width="100%" />
 
 <br/>
 
-<table width="100%">
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
-    <td width="50%">
+    <td width="50%" align="center">
       <img src="https://github-readme-stats.vercel.app/api?username=Amitabh-Phule&show_icons=true&theme=react-dark&hide_border=true&count_private=true" width="100%" />
     </td>
-    <td width="50%">
+    <td width="50%" align="center">
       <img src="https://github-readme-activity-graph.vercel.app/graph?username=Amitabh-Phule&theme=react-dark&hide_border=true&hide_extension=true" width="100%" />
     </td>
   </tr>
@@ -31,13 +30,13 @@
 
 <br/>
 
-<table width="100%">
+<table border="0" width="100%" cellspacing="0" cellpadding="0">
   <tr>
-    <td width="50%">
+    <td width="50%" align="center">
       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Amitabh-Phule&layout=compact&theme=react-dark&hide_border=true" width="100%" />
     </td>
-    <td width="50%">
-       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Amitabh-Phule&layout=donut&theme=react-dark&hide_border=true" width="100%" />
+    <td width="50%" align="center">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Amitabh-Phule&layout=donut&theme=react-dark&hide_border=true" width="100%" />
     </td>
   </tr>
 </table>
@@ -47,7 +46,6 @@
 ---
 
 ### 🛠️ My Tech Stack
-
 #### 💻 Programming & Web
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
@@ -68,7 +66,7 @@
 
 ---
 
-### 📫 Connect with me
+### 📫 Let's Connect!
 <p align="left">
 <a href="https://linkedin.com/in/Amitabh-Phule" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 <a href="mailto:amitabhphule@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
