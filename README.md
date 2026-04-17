@@ -1,97 +1,264 @@
 <div align="center">
 
-<img src="https://github.com/Amitabh-Phule/Amitabh-Phule/blob/main/WhatsApp%20Image%202026-04-17%20at%2010.39.43%20PM%20(1).jpeg?raw=true" width="100%" alt="Amitabh Phule Banner" />
-
-<br/>
-
-# 👋 Hi, I'm Amitabh Phule  
-**B.Tech Student | AI Enthusiast | Creative Developer**
-
-<br/>
-
-<img src="game.gif" alt="Interactive Banner" width="480"/>
-
-<br/>
-<br/>
-
-<table border="0" width="100%" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="40%" align="left" style="padding-left: 20px; line-height: 2;">
-      <font size="4"><b>Amitabh-Phule (Amitabh)</b></font><br/>
-      📝 <b>662 Contributions in 2026</b><br/>
-      📁 <b>11 Public Repos</b><br/>
-      🗓️ <b>Joined GitHub 1 year ago</b><br/>
-      🆔 <b>@Amitabh-Phule</b>
-    </td>
-    <td width="60%" align="right">
-      <img src="https://github-readme-activity-graph.vercel.app/graph?username=Amitabh-Phule&theme=react-dark&area=true&hide_border=true&hide_title=true" width="100%" />
-    </td>
-  </tr>
-</table>
-
-<br/>
-
-<table border="0" width="100%" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="50%" align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=Amitabh-Phule&show_icons=true&theme=react-dark&hide_border=true&count_private=true" width="100%" />
-    </td>
-    <td width="50%" align="center">
-      <img src="https://github-readme-activity-graph.vercel.app/graph?username=Amitabh-Phule&theme=react-dark&hide_border=true&hide_extension=true" width="100%" />
-    </td>
-  </tr>
-</table>
-
-<br/>
-
-<table border="0" width="100%" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="50%" align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Amitabh-Phule&layout=compact&theme=react-dark&hide_border=true" width="100%" />
-    </td>
-    <td width="50%" align="center">
-       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Amitabh-Phule&layout=donut&theme=react-dark&hide_border=true" width="100%" />
-    </td>
-  </tr>
-</table>
+![Banner](WhatsApp%20Image%202026-04-17%20at%2010.39.43%20PM%20(1).jpeg)
 
 </div>
 
 ---
 
-### 🛠️ My Tech Stack
+<div align="center">
 
-#### 💻 Programming & Web
-<p align="left">
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-</p>
+# Amitabh Phule
 
-#### 🤖 AI, Machine Learning & RAG
-<p align="left">
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/RAG-Architecture-blue?style=for-the-badge&logo=databricks&logoColor=white" />
-  <img src="https://img.shields.io/badge/SaaS_Architecture-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-</p>
+### 🤖 AI/ML Engineer · Full-Stack Developer · Systems Thinker
 
-#### 🔧 Tools & Softwares
-<p align="left">
-  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white" />
-</p>
+*Building intelligent systems at the intersection of machine learning, scalable architecture, and human-centred design.*
+
+<br/>
+
+<img src="game.gif" alt="Interactive Banner" width="480"/>
+
+</div>
 
 ---
 
-### 📫 Let's Connect!
-<p align="left">
-<a href="https://linkedin.com/in/Amitabh-Phule" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:amitabhphule@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-</p>
+## 🛠️ Tech Stack
+
+### 💻 Languages
+
+<table border="0" cellspacing="0" cellpadding="8"><tr>
+<td align="center"><img src="https://skillicons.dev/icons?i=python" width="55" height="55"/><br/>Python</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=cpp" width="55" height="55"/><br/>C++</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=java" width="55" height="55"/><br/>Java</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=js" width="55" height="55"/><br/>JavaScript</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=html" width="55" height="55"/><br/>HTML5</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=css" width="55" height="55"/><br/>CSS3</td>
+</tr></table>
+
+### 🤖 AI / ML
+
+<table border="0" cellspacing="0" cellpadding="8"><tr>
+<td align="center"><img src="https://skillicons.dev/icons?i=tensorflow" width="55" height="55"/><br/>TensorFlow</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=opencv" width="55" height="55"/><br/>OpenCV</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=sklearn" width="55" height="55"/><br/>Scikit-Learn</td>
+<td align="center"><img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=Jupyter&logoColor=white" height="40"/><br/>Jupyter</td>
+<td align="center"><img src="https://img.shields.io/badge/RAG-6A0DAD?style=for-the-badge&logo=openai&logoColor=white" height="40"/><br/>RAG</td>
+</tr></table>
+
+### 🌐 Web & DevOps Tools
+
+<table border="0" cellspacing="0" cellpadding="8"><tr>
+<td align="center"><img src="https://skillicons.dev/icons?i=vscode" width="55" height="55"/><br/>VS Code</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=git" width="55" height="55"/><br/>Git</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=github" width="55" height="55"/><br/>GitHub</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=docker" width="55" height="55"/><br/>Docker</td>
+<td align="center"><img src="https://skillicons.dev/icons?i=kubernetes" width="55" height="55"/><br/>Kubernetes</td>
+</tr></table>
+
+### 🎨 Design
+
+<table border="0" cellspacing="0" cellpadding="8"><tr>
+<td align="center"><img src="https://skillicons.dev/icons?i=figma" width="55" height="55"/><br/>Figma</td>
+<td align="center"><img src="https://img.shields.io/badge/Canva-00C4CC?style=for-the-badge&logo=Canva&logoColor=white" height="40"/><br/>Canva</td>
+</tr></table>
+
+> *Aesthetic interest in tribal geometric design systems — structured symmetry meets cultural depth.*
+
+### ⚙️ Core Concepts
+
+<table border="0" cellspacing="0" cellpadding="8"><tr>
+<td align="center"><img src="https://img.shields.io/badge/SaaS%20Architecture-0A66C2?style=for-the-badge&logo=amazonaws&logoColor=white" height="40"/><br/>SaaS Architecture</td>
+<td align="center"><img src="https://img.shields.io/badge/CI%2FCD%20Pipelines-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" height="40"/><br/>CI/CD Pipelines</td>
+<td align="center"><img src="https://img.shields.io/badge/System%20Design-6DB33F?style=for-the-badge&logo=apachekafka&logoColor=white" height="40"/><br/>System Design</td>
+</tr></table>
+
+---
+
+## 📊 GitHub Dashboard
+
+> 🔄 **Auto-updated daily** via GitHub Actions &nbsp;|&nbsp; Last updated: `17 Apr 2026, 19:40 UTC`
+
+<!--DASHBOARD_START-->
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="30%" valign="middle" style="padding:16px;">
+
+<b>Amitabh-Phule (Amitabh)</b><br/><br/>
+
+🔵 &nbsp;<b>673</b> Contributions in 2026<br/><br/>
+📋 &nbsp;<b>10</b> Public Repos<br/><br/>
+🕐 &nbsp;Joined GitHub <b>1 year ago</b><br/><br/>
+⭐ &nbsp;<b>2</b> Total Stars<br/><br/>
+🎴 &nbsp;@Amitabh-Phule
+
+</td>
+<td width="70%" valign="top" style="padding:16px;">
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Amitabh-Phule&theme=react-dark&hide_border=true&area=true&custom_title=Contributions+in+the+last+year&color=58a6ff&line=58a6ff&point=58a6ff)](https://github.com/Amitabh-Phule)
+
+</td>
+</tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50%" valign="top" style="padding:8px;">
+
+| Metric | Count |
+|--------|-------|
+| ⭐ Total Stars | **2** |
+| 💻 Total Commits | **254** |
+| 🔀 Total PRs | **0** |
+| 🐛 Total Issues | **0** |
+| 📦 Contributed to | **9 repos** |
+
+</td>
+<td width="50%" valign="top" style="padding:8px;">
+
+[![Commits UTC](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Amitabh-Phule&theme=react_dark&utcOffset=5.5)](https://github.com/Amitabh-Phule)
+
+</td>
+</tr>
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="50%" valign="top" style="padding:8px;">
+
+**Top Languages by Repo**
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+    <tr>
+      <td style="padding:4px 8px;"><span style="display:inline-block;width:16px;height:16px;background:#DA5B0B;border-radius:3px;"></span>&nbsp;<span style="color:#c9d1d9;font-size:12px;">Jupyter Notebook</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#DA5B0B;height:100%;width:30%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">30%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="16" height="16" style="border-radius:3px;vertical-align:middle;"/>&nbsp;<span style="color:#c9d1d9;font-size:12px;">Python</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#3572A5;height:100%;width:15%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">15%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="16" height="16" style="border-radius:3px;vertical-align:middle;"/>&nbsp;<span style="color:#c9d1d9;font-size:12px;">C++</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#f34b7d;height:100%;width:10%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">10%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><span style="display:inline-block;width:16px;height:16px;background:#888;border-radius:3px;"></span>&nbsp;<span style="color:#c9d1d9;font-size:12px;">Cython</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#888;height:100%;width:5%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">5%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="16" height="16" style="border-radius:3px;vertical-align:middle;"/>&nbsp;<span style="color:#c9d1d9;font-size:12px;">C</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#555555;height:100%;width:5%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">5%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><span style="display:inline-block;width:16px;height:16px;background:#888;border-radius:3px;"></span>&nbsp;<span style="color:#c9d1d9;font-size:12px;">Fortran</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#888;height:100%;width:5%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">5%</td>
+    </tr>
+</table>
+
+</td>
+<td width="50%" valign="top" style="padding:8px;">
+
+**Top Languages by Commit**
+
+<table border="0" cellspacing="0" cellpadding="0" width="100%">
+
+    <tr>
+      <td style="padding:4px 8px;"><span style="display:inline-block;width:16px;height:16px;background:#DA5B0B;border-radius:3px;"></span>&nbsp;<span style="color:#c9d1d9;font-size:12px;">Jupyter Notebook</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#DA5B0B;height:100%;width:73%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">73%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="16" height="16" style="border-radius:3px;vertical-align:middle;"/>&nbsp;<span style="color:#c9d1d9;font-size:12px;">Python</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#3572A5;height:100%;width:26%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">26%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="16" height="16" style="border-radius:3px;vertical-align:middle;"/>&nbsp;<span style="color:#c9d1d9;font-size:12px;">C++</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#f34b7d;height:100%;width:1%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">1%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="16" height="16" style="border-radius:3px;vertical-align:middle;"/>&nbsp;<span style="color:#c9d1d9;font-size:12px;">C#</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#178600;height:100%;width:0%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">0%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><span style="display:inline-block;width:16px;height:16px;background:#888;border-radius:3px;"></span>&nbsp;<span style="color:#c9d1d9;font-size:12px;">Cython</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#888;height:100%;width:0%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">0%</td>
+    </tr>
+    <tr>
+      <td style="padding:4px 8px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="16" height="16" style="border-radius:3px;vertical-align:middle;"/>&nbsp;<span style="color:#c9d1d9;font-size:12px;">C</span></td>
+      <td style="padding:4px 8px;">
+        <div style="background:#21262d;border-radius:4px;height:8px;width:100px;overflow:hidden;">
+          <div style="background:#555555;height:100%;width:0%;border-radius:4px;"></div>
+        </div>
+      </td>
+      <td style="padding:4px 8px;color:#8b949e;font-size:12px;text-align:right;">0%</td>
+    </tr>
+</table>
+
+</td>
+</tr>
+</table>
+<!--DASHBOARD_END-->
+
+---
+
+<div align="center">
+
+*Crafted with purpose · Powered by curiosity · Driven by impact*
+
+![Profile Views](https://komarev.com/ghpvc/?username=Amitabh-Phule&color=6A0DAD&style=for-the-badge&label=PROFILE+VIEWS)
+
+</div>
