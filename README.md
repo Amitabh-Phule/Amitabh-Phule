@@ -9,55 +9,11 @@
 
 <br/>
 
-<img src="game.gif" alt="Interactive Banner" width="480"/>
+<img src="game.gif" alt="Interactive Banner" width="950"/>
 
 <br/>
 <br/>
 
-<table border="0" width="100%" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="40%" align="left" style="padding-left: 20px; line-height: 2;">
-      <font size="4"><b>Amitabh-Phule (Amitabh)</b></font><br/>
-      📝 <b>662 Contributions in 2026</b><br/>
-      📁 <b>11 Public Repos</b><br/>
-      🗓️ <b>Joined GitHub 1 year ago</b><br/>
-      🆔 <b>@Amitabh-Phule</b>
-    </td>
-    <td width="60%" align="right">
-      <img src="https://github-readme-activity-graph.vercel.app/graph?username=Amitabh-Phule&theme=react-dark&area=true&hide_border=true&hide_title=true" width="100%" />
-    </td>
-  </tr>
-</table>
-
-<br/>
-
-<table border="0" width="100%" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="50%" align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=Amitabh-Phule&show_icons=true&theme=react-dark&hide_border=true&count_private=true" width="100%" />
-    </td>
-    <td width="50%" align="center">
-      <img src="https://github-readme-activity-graph.vercel.app/graph?username=Amitabh-Phule&theme=react-dark&hide_border=true&hide_extension=true" width="100%" />
-    </td>
-  </tr>
-</table>
-
-<br/>
-
-<table border="0" width="100%" cellpadding="0" cellspacing="0">
-  <tr>
-    <td width="50%" align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Amitabh-Phule&layout=compact&theme=react-dark&hide_border=true" width="100%" />
-    </td>
-    <td width="50%" align="center">
-       <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Amitabh-Phule&layout=donut&theme=react-dark&hide_border=true" width="100%" />
-    </td>
-  </tr>
-</table>
-
-</div>
-
----
 
 ### 🛠️ My Tech Stack
 
