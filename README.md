@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="WhatsApp%20Image%202026-04-17%20at%2010.39.43%20PM%20(1).jpeg" width="100%" />
+<img src="WhatsApp%20Image%202026-04-17%20at%2010.39.43%20PM%20(1).jpeg" width="100%" alt="Amitabh Phule Banner" />
 
 <br/>
 
 # 👋 Hi, I'm Amitabh Phule  
 **B.Tech Student | AI Enthusiast | Creative Developer**
-*"Building the future with code and creativity."*
+*"Transforming logic into interactive experiences and AI solutions."*
 
 <br/>
 
@@ -24,7 +24,7 @@
       <img src="https://github-readme-stats.vercel.app/api?username=Amitabh-Phule&show_icons=true&theme=react-dark&hide_border=true&count_private=true" width="100%" />
     </td>
     <td width="50%">
-      <img src="https://github-readme-streak-stats.herokuapp.com/?user=Amitabh-Phule&theme=react-dark&hide_border=true" width="100%" />
+      <img src="https://github-readme-activity-graph.vercel.app/graph?username=Amitabh-Phule&theme=react-dark&hide_border=true&hide_extension=true" width="100%" />
     </td>
   </tr>
 </table>
@@ -41,10 +41,6 @@
     </td>
   </tr>
 </table>
-
-<br/>
-
-<img src="https://github-profile-trophy.vercel.app/?username=Amitabh-Phule&theme=dracula&no-bg=true&column=6" width="100%" />
 
 </div>
 
@@ -64,10 +60,10 @@
 
 #### 🔧 Tools & Platforms
 <p align="left">
-  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+  <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" />
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 </p>
 
 ---
