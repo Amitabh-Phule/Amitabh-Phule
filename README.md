@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://github.com/Amitabh-Phule/Amitabh-Phule/blob/main/WhatsApp%20Image%202026-04-17%20at%2010.39.43%20PM%20(1).jpeg?raw=true" width="100%" alt="Amitabh Phule Banner" />
+<img src="WhatsApp%20Image%202026-04-17%20at%2010.39.43%20PM%20(1).jpeg" width="100%" alt="Amitabh Phule Banner" />
 
 <br/>
 
@@ -18,9 +18,9 @@
 
 ---
 
-### 🛠️ My Tech Stack
+### 🛠️ My Tech Stack (दुसरी इमेज संदर्भ)
 
-#### 💻 Programming & Web
+#### 💻 Programming Languages
 <p align="left">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
   <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
@@ -30,38 +30,40 @@
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
 </p>
 
-#### 🤖 AI, Machine Learning & Computer Vision
-<p align="left">
-  <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
-  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
-  <img src="https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white" />
-  <img src="https://img.shields.io/badge/Machine_Learning-3776AB?style=for-the-badge&logo=scikit-learn&logoColor=white" />
-</p>
-
 #### 🔧 Tools & Platforms
 <p align="left">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
   <img src="https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" />
 </p>
 
 ---
 
-### 📂 Featured Projects
+### 📊 GitHub Analysis & Stats (तिसरी इमेज संदर्भ)
 
-* **🔍 Spot-the-Difference-Detector:** Python & OpenCV based image comparison tool.
-* **🤖 IIT-GenAi:** Research and implementation of Generative AI models.
-* **🧠 Machine-Learning:** A complete repository of ML algorithms and datasets.
-* **📚 Language Labs:** Specialized repositories for **C++**, **Java**, and **OpenCV** experiments.
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Amitabh-Phule&show_icons=true&theme=react-dark&hide_border=true" width="48%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Amitabh-Phule&theme=react-dark&hide_border=true" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Amitabh-Phule&layout=compact&theme=react-dark&hide_border=true" width="48%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Amitabh-Phule&theme=react-dark&hide_border=true" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Amitabh-Phule&theme=dracula&no-bg=true&column=6" width="100%" />
+</p>
 
 ---
 
-### 📈 GitHub Stats
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Amitabh-Phule&show_icons=true&theme=react-dark" height="170px" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Amitabh-Phule&layout=compact&theme=react-dark" height="170px" />
-</div>
+### 📂 Featured Projects & Labs
+* **🔍 Spot-the-Difference-Detector:** Image processing using OpenCV.
+* **🤖 IIT-GenAi:** Generative AI research.
+* **🧠 Machine-Learning:** Algorithms and data analysis.
+* **📚 Language Labs:** Specialized folders for **cpp**, **JAVA**, and **opencv**.
 
 ---
 
