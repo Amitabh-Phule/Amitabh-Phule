@@ -9,7 +9,7 @@
 
 <br/>
 
-<img src="game.gif" alt="Interactive Banner" width="1000"/>
+<img src="game.gif" alt="Interactive Banner" width="950"/>
 
 <br/>
 <br/>
