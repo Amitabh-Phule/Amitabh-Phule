@@ -8,11 +8,7 @@
     
 <div align="center">
 
-<h1>
-  👋 Hi, I'm <span style="color:#58A6FF">Amitabh Phule</span> 👋
-</h1>
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&pause=2000&color=58A6FF&center=true&vCenter=true&width=800&lines=✨+Welcome+to+my+GitHub+Profile!+✨;🚀+Let's+build+something+amazing+🚀)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&pause=2000&color=58A6FF&center=true&vCenter=true&width=1000&lines=👋+Hi,+I'm+Amitabh+Phule+👋;✨+Welcome+to+my+GitHub+Profile!+✨;🚀+Let's+build+something+amazing+🚀)](https://git.io/typing-svg)
 
 </div>
 
