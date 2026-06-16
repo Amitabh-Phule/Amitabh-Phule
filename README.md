@@ -6,7 +6,13 @@
 
 <div align="center">
     
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1200&color=00F7FF&center=true&vCenter=true&width=700&lines=Hi%2C+I'm+Amitabh+Phule+%F0%9F%91%8B;Welcome+to+my+GitHub+Profile+%E2%9C%A8;Let's+build+something+amazing+%F0%9F%9A%80)](https://git.io/typing-svg)
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=gradient&text=Amitabh%20Phule&fontSize=50&fontAlignY=40&animation=fadeIn" />
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=26&pause=1500&color=58A6FF&center=true&vCenter=true&width=900&lines=👋+Hi%2C+I'm+Amitabh+Phule;✨+Welcome+to+My+GitHub+Profile;🚀+Let's+Build+Something+Amazing+Together)](https://git.io/typing-svg)
+
+</div>
 
 </div>
 
