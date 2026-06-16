@@ -4,7 +4,7 @@
 
 <br/>
 
-# 👋 Hi, I'm Amitabh Phule  
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1200&color=00F7FF&center=true&vCenter=true&width=700&lines=Hi%2C+I'm+Amitabh+Phule+%F0%9F%91%8B;AI+Enthusiast+%7C+Creative+Developer;Building+cool+things+with+AI+%F0%9F%A4%96)](https://git.io/typing-svg)  
 
 ## 🧑‍💻 About Me
 </div>
