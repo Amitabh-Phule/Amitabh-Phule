@@ -21,20 +21,31 @@
 </div>
 
 ```python
+## 🧑‍💻 About Me
+
+```python
 class Amitabh:
     def __init__(self):
-        self.name        = "Amitabh Phule"
-        self.role        = "B.Tech Student | AI Enthusiast | Creative Developer"
-        self.location    = "India 🇮🇳"
-        self.interests   = ["AI/ML", "RAG", "SaaS", "Creative Dev"]
-        self.currently   = "Building AI-powered projects 🤖"
-        self.fun_fact    = "I think in Python, dream in tensors 🧠"
-
-    def say_hi(self):
-        print("Thanks for dropping by! Let's build something amazing together 🚀")
-
+        self.name       = "Amitabh Phule"
+        self.role       = "B.Tech CSE (AI/ML) Student"
+        self.identity   = "Idea-to-Prototype Builder"
+        self.location   = "India 🇮🇳"
+        self.focus      = [
+            "Machine Learning",
+            "Generative AI",
+            "Software Development"
+        ]
+        self.currently  = "Transforming random thoughts into working software"
+        self.mindset    = "Execution beats imagination."
+        self.goal       = "Build systems people actually use."
+    def status(self):
+        print("Converting curiosity into commits.")       
 me = Amitabh()
-me.say_hi()
+me.status()
+```
+
+---
+
 ```
 
 
