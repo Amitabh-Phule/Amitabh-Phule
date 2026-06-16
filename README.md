@@ -21,9 +21,6 @@
 </div>
 
 ```python
-## 🧑‍💻 About Me
-
-```python
 class Amitabh:
     def __init__(self):
         self.name       = "Amitabh Phule"
