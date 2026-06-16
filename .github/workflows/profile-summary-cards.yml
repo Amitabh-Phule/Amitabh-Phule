@@ -1,31 +1,22 @@
-name: Update Space Shooter Game
+name: GitHub Profile Summary Cards
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # दररोज रात्री १२ वाजता अपडेट होईल
-  workflow_dispatch:      # तुला हवं तेव्हा मॅन्युअली रन करता येईल
-
-permissions:
-  contents: write
+    - cron: "0 * * * *"
+  workflow_dispatch:
 
 jobs:
-  update-game:
+  build:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 2
 
-      - uses: czl9707/gh-space-shooter@v2
+      - uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          output-path: 'game.gif'
-          strategy: 'random'
-
-      - name: Commit and Push
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add game.gif
-          git commit -m "Update space shooter game" || echo "No changes to commit"
-          git push
+          USERNAME: Amitabh-Phule
