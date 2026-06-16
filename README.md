@@ -5,8 +5,7 @@
 <br/>
 
 <div align="center">
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&pause=1500&color=00F7FF&center=true&vCenter=true&width=800&lines=Hi%2C+I'm+Amitabh+Phule+%F0%9F%91%8B;Welcome+to+my+GitHub+Profile+%E2%9C%A8;Full-Stack+Developer+%F0%9F%92%BB;AI+Enthusiast+%F0%9F%A4%96;Let's+build+something+amazing+%F0%9F%9A%80)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1200&color=00F7FF&center=true&vCenter=true&width=700&lines=Hi%2C+I'm+Amitabh+Phule+%F0%9F%91%8B;Welcome+to+my+GitHub+Profile+%E2%9C%A8;Let's+build+something+amazing+%F0%9F%9A%80)](https://git.io/typing-svg)
 
 </div>
 
