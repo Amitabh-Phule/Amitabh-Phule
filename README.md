@@ -12,7 +12,8 @@
 </div>
 
 </div>
-<div align="center">
+<h2 align="center">
+</h2>
 ## 🧑‍💻 About Me
 </div>
 
