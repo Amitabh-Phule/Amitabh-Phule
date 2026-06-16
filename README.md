@@ -5,10 +5,14 @@
 <br/>
 
 <div align="center">
-
+    
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&pause=1800&color=36BCF7&center=true&vCenter=true&width=1000&lines=Hi%2C+I'm+Amitabh+Phule+👋;Welcome+to+My+GitHub+Profile+✨;Passionate+About+Building+Innovative+Solutions;Let's+Create+Something+Amazing+🚀)](https://git.io/typing-svg)
+<h1>
+  👋 Hi, I'm <span style="color:#58A6FF">Amitabh Phule</span> 👋
+</h1>
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&pause=2000&color=58A6FF&center=true&vCenter=true&width=800&lines=✨+Welcome+to+my+GitHub+Profile!+✨;🚀+Let's+build+something+amazing+🚀)](https://git.io/typing-svg)
 
 </div>
 
