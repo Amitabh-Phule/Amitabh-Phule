@@ -6,9 +6,6 @@
 
 <div align="center">
     
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&height=220&color=gradient&text=Amitabh%20Phule&fontSize=50&fontAlignY=40&animation=fadeIn" />
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=26&pause=1500&color=58A6FF&center=true&vCenter=true&width=900&lines=👋+Hi%2C+I'm+Amitabh+Phule;✨+Welcome+to+My+GitHub+Profile;🚀+Let's+Build+Something+Amazing+Together)](https://git.io/typing-svg)
 
