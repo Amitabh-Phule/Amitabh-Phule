@@ -43,11 +43,6 @@ me.status()
 
 ---
 
-```
-
-
-
-
 <h2 align="center">
 🛠️ My Tech Stack
 </h2>
