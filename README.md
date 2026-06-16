@@ -5,16 +5,19 @@
 <br/>
 
 <div align="center">
-    
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=26&pause=1500&color=58A6FF&center=true&vCenter=true&width=900&lines=👋+Hi%2C+I'm+Amitabh+Phule;✨+Welcome+to+My+GitHub+Profile;🚀+Let's+Build+Something+Amazing+Together)](https://git.io/typing-svg)
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=28&pause=1800&color=36BCF7&center=true&vCenter=true&width=1000&lines=Hi%2C+I'm+Amitabh+Phule+👋;Welcome+to+My+GitHub+Profile+✨;Passionate+About+Building+Innovative+Solutions;Let's+Create+Something+Amazing+🚀)](https://git.io/typing-svg)
+
+</div>
 
 </div>
 
 </div>
 <h2 align="center">
+🧑‍💻 About Me
 </h2>
-## 🧑‍💻 About Me
 </div>
 
 ```python
