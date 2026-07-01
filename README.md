@@ -26,7 +26,6 @@ class Amitabh:
         self.name       = "Amitabh Phule"
         self.role       = "B.Tech CSE (AI/ML) Student"
         self.identity   = "Idea-to-Prototype Builder"
-        self.location   = "India 🇮🇳"
         self.focus      = [
             "Machine Learning",
             "Generative AI",
